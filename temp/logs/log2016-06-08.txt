@@ -1,0 +1,36 @@
+[2016-06-08 08:38:34] [WARNING] [apps.sad.views:621] [/sad/user/create/] [127.0.0.1] [admin] Se añadió con éxito el Usuario "franklin".
+[2016-06-08 08:48:59] [WARNING] [apps.space.views:571] [/space/enterprise/update/1.40ee40fd8e81af95462813c606daf9ea/] [127.0.0.1] [admin] Se modificó con éxito el Enterprise "RESIDENCIAL LAS AMERICAS".
+[2016-06-08 08:49:22] [WARNING] [apps.space.views:612] [/space/association/edit_current/] [127.0.0.1] [admin] Se modificó con éxito el Association "Americas".
+[2016-06-08 09:15:56] [WARNING] [apps.sad.views:449] [/sad/user/update/1.44465210c78d8810903315dd9048cf90/] [127.0.0.1] [admin] Se modificó con éxito el Usuario "admin".
+[2016-06-08 09:18:45] [WARNING] [apps.space.views:612] [/space/association/edit_current/] [127.0.0.1] [admin] Se modificó con éxito el Association "Americas".
+[2016-06-08 09:19:23] [WARNING] [apps.sad.views:621] [/sad/user/create/] [127.0.0.1] [admin] Se añadió con éxito el Usuario "rolando".
+[2016-06-08 09:43:34] [WARNING] [apps.sad.views:449] [/sad/user/update/2.0ed057f70bc1871efaa535956de18d72/] [127.0.0.1] [admin] Se modificó con éxito el Usuario "franklin".
+[2016-06-08 10:55:09] [WARNING] [apps.sad.views:621] [/sad/user/create/] [127.0.0.1] [admin] Se añadió con éxito el Usuario "sara".
+[2016-06-08 12:03:31] [WARNING] [apps.sad.views:621] [/sad/user/create/] [127.0.0.1] [admin] Se añadió con éxito el Usuario "contabilidad".
+[2016-06-08 12:07:54] [WARNING] [apps.space.views:783] [/space/solution/update/2.8101a6430c43587068577c3c0b27faee/] [127.0.0.1] [admin] Se modificó con éxito el Solution "Basico".
+[2016-06-08 12:08:04] [WARNING] [apps.space.views:783] [/space/solution/update/1.b63cdb3d9abaeafafac28354928551c3/] [127.0.0.1] [admin] Se modificó con éxito el Solution "Completo".
+[2016-06-08 12:08:17] [WARNING] [apps.space.views:783] [/space/solution/update/1.b63cdb3d9abaeafafac28354928551c3/] [127.0.0.1] [admin] Se modificó con éxito el Solution "Completo".
+[2016-06-08 12:08:47] [WARNING] [apps.sad.views:1114] [/sad/module/update/10.809e23350526c5cdf3ef95725718b924/] [127.0.0.1] [admin] Se modificó con éxito el Module "Ventas (Ventas)".
+[2016-06-08 12:09:00] [WARNING] [apps.sad.views:1114] [/sad/module/update/1.3d5372d2c66118e86a74722d72b2f195/] [127.0.0.1] [admin] Se modificó con éxito el Module "Backend (Backend Manager)".
+[2016-06-08 12:11:06] [WARNING] [apps.sad.views:1114] [/sad/module/update/10.809e23350526c5cdf3ef95725718b924/] [127.0.0.1] [admin] Se modificó con éxito el Module "CONTABILIDAD (CONTABILIDAD)".
+[2016-06-08 12:16:02] [WARNING] [apps.sad.views:1114] [/sad/module/update/1.3d5372d2c66118e86a74722d72b2f195/] [127.0.0.1] [admin] Se modificó con éxito el Module "Backend (BACKEND)".
+[2016-06-08 12:16:47] [WARNING] [apps.sad.views:1114] [/sad/module/update/1.3d5372d2c66118e86a74722d72b2f195/] [127.0.0.1] [admin] Se modificó con éxito el Module "BACKEND (BACKEND)".
+[2016-06-08 12:19:30] [WARNING] [apps.sad.views:708] [/sad/menu/state/rea/19.e4f7466636ef02b874574a0d454ada79/] [127.0.0.1] [admin] The Menu "Logs (BACKEND)" was reactivated successfully.
+[2016-06-08 12:20:21] [WARNING] [apps.sad.views:708] [/sad/menu/state/ina/19.285e4f7554179d27e2d45dcf6a5f5ec4/] [127.0.0.1] [admin] The Menu "Logs (BACKEND)" was inactivated successfully.
+[2016-06-08 12:20:33] [WARNING] [apps.sad.views:708] [/sad/menu/state/ina/18.3d81e8978314b914db1654ff1f6d323c/] [127.0.0.1] [admin] The Menu "Users (BACKEND)" was inactivated successfully.
+[2016-06-08 12:20:38] [WARNING] [apps.sad.views:708] [/sad/menu/state/rea/18.87dc88a01ff58f74deb0bb562ee2ef84/] [127.0.0.1] [admin] The Menu "Users (BACKEND)" was reactivated successfully.
+[2016-06-08 12:21:23] [WARNING] [apps.sad.views:807] [/sad/menu/update/26.f3d87b48d9f9b23239eab4c9c856d5be/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Persona (BACKEND)".
+[2016-06-08 12:29:46] [WARNING] [apps.sad.views:807] [/sad/menu/update/26.f3d87b48d9f9b23239eab4c9c856d5be/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Persona (BACKEND)".
+[2016-06-08 13:23:19] [WARNING] [apps.sad.views:807] [/sad/menu/update/26.f3d87b48d9f9b23239eab4c9c856d5be/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Person (BACKEND)".
+[2016-06-08 13:47:02] [WARNING] [apps.sad.views:1114] [/sad/module/update/1.3d5372d2c66118e86a74722d72b2f195/] [127.0.0.1] [admin] Se modificó con éxito el Module "BACKEND (BACKEND)".
+[2016-06-08 13:52:55] [WARNING] [apps.sad.views:1114] [/sad/module/update/10.809e23350526c5cdf3ef95725718b924/] [127.0.0.1] [admin] Se modificó con éxito el Module "CONTABILIDAD (CONTABILIDAD)".
+[2016-06-08 14:02:42] [WARNING] [apps.sad.views:1342] [/sad/group/update/13.97de5ea43cb7c3b605ca28e54abd6057/] [127.0.0.1] [admin] Se modificó con éxito el Grupo "COBRANZAS".
+[2016-06-08 14:03:51] [WARNING] [apps.sad.views:1145] [/sad/module/create/] [127.0.0.1] [admin] Se añadió con éxito el Module "COBRANZAS (COBRANZAS)".
+[2016-06-08 14:04:50] [WARNING] [apps.sad.views:838] [/sad/menu/create/] [127.0.0.1] [admin] Se añadió con éxito el Menu "Cobranza (BACKEND)".
+[2016-06-08 14:06:26] [WARNING] [apps.sad.views:807] [/sad/menu/update/101.0711a7657e44955b15929c8ef1069ca9/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Cobranza (BACKEND)".
+[2016-06-08 14:06:50] [WARNING] [apps.sad.views:760] [/sad/menu/delete/101.752c41bc6f817c1dd10f730909e008c2/] [127.0.0.1] [admin] Se eliminó con éxito el Menu "Cobranza (BACKEND)".
+[2016-06-08 14:06:57] [WARNING] [apps.sad.views:838] [/sad/menu/create/] [127.0.0.1] [admin] Se añadió con éxito el Menu "Cobranza (BACKEND)".
+[2016-06-08 14:40:09] [WARNING] [apps.space.views:612] [/space/association/edit_current/] [127.0.0.1] [admin] Se modificó con éxito el Association "Americas".
+[2016-06-08 15:11:23] [WARNING] [apps.sad.views:838] [/sad/menu/create/] [127.0.0.1] [admin] Se añadió con éxito el Menu "RubroCobranza (BACKEND)".
+[2016-06-08 15:11:44] [WARNING] [apps.sad.views:807] [/sad/menu/update/103.6c80e537c6c97dd6b1d41bb6fd2660cb/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Rubro (BACKEND)".
+[2016-06-08 16:08:33] [WARNING] [apps.sad.views:807] [/sad/menu/update/5.760a75f4f5e269727eacd0b43aa587b4/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Permisos (BACKEND)".

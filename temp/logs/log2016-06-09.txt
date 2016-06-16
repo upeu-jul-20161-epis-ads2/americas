@@ -1,0 +1,2 @@
+[2016-06-09 11:22:04] [WARNING] [apps.sad.views:621] [/sad/user/create/] [127.0.0.1] [admin] Se añadió con éxito el Usuario "rolango".
+[2016-06-09 11:22:59] [WARNING] [apps.sad.views:221] [/sad/user/state/ina/6.87b2e978cfbe5bd1b243ca48bc7c1a5a/] [127.0.0.1] [admin] Se modificó con éxito el Usuario "prueba".

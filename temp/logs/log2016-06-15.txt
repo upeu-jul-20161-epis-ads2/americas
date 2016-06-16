@@ -1,0 +1,7 @@
+[2016-06-15 12:57:56] [WARNING] [apps.sad.views:449] [/sad/user/update/20.22ef8c3e4e94ea8c2b752fa3e848deda/] [127.0.0.1] [admin] Se modificó con éxito el Usuario "rex".
+[2016-06-15 13:00:40] [WARNING] [apps.sad.views:621] [/sad/user/create/] [127.0.0.1] [admin] Se añadió con éxito el Usuario "superu".
+[2016-06-15 13:27:42] [WARNING] [apps.sad.views:838] [/sad/menu/create/] [127.0.0.1] [admin] Se añadió con éxito el Menu "Socio (BACKEND)".
+[2016-06-15 13:28:32] [WARNING] [apps.sad.views:838] [/sad/menu/create/] [127.0.0.1] [admin] Se añadió con éxito el Menu "Agregar Socio (BACKEND)".
+[2016-06-15 13:29:14] [WARNING] [apps.sad.views:807] [/sad/menu/update/104.8482ed77099bbc64c1dafefc6f5937e5/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Socio (BACKEND)".
+[2016-06-15 13:30:07] [WARNING] [apps.sad.views:807] [/sad/menu/update/105.0426b8418de459154fd5afb8d07ef419/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Agregar Socio (BACKEND)".
+[2016-06-15 13:30:24] [WARNING] [apps.sad.views:807] [/sad/menu/update/104.8482ed77099bbc64c1dafefc6f5937e5/] [127.0.0.1] [admin] Se modificó con éxito el Menu "Socio (BACKEND)".
