@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     'apps.mod_backend',
     'apps.accounts',
     'apps.cobranza',
-
+    'apps.contabilidad',
 ]
 
 MIDDLEWARE_CLASSES = [
