@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-
+'''
 class MODELNAME(models.Model):
 
     class Meta:
@@ -11,3 +11,4 @@ class MODELNAME(models.Model):
 
     def __str__(self):
         pass
+'''
