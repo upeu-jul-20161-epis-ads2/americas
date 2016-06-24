@@ -1,0 +1,779 @@
+[2016-06-24 08:25:16] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2016-06-24 08:25:16] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2016-06-24 08:25:24] DEBUG [django.template:927] Exception while resolving variable 'redirect_to' in template 'home/index.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'redirect_to'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'redirect_to'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'redirect_to'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [redirect_to] in "[{'None': None, 'True': True, 'False': False}, {'LANGUAGE_BIDI': False, 'STATIC_URL': '/static/', 'MEDIA_URL': '/media/', 'request': <WSGIRequest: GET '/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000044EE6D8>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x00000000044CC7B8>>, 'LANGUAGE_CODE': 'es', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10}, 'LANGUAGES': (('ja', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), ('zh-tw', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), ('fr', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), ('de', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), ('en', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), ('es', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), ('es-ar', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), ('es-pe', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), ('pt', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), ('pt-br', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000045122E8>, 'csrf_token': <SimpleLazyObject: '2qN10VHByaZztwi4YyInV4FHeAiOb2ZP'>, 'TIME_ZONE': 'Hora est. Pacífico, Sudamérica'}, {}, {'page_module': 'Inicio', 'page_title': 'Home Page.'}, {'block': <Block Node: header. Contents: [<TextNode: '\\n'>, <django.template.loader_tags.IncludeNode object at 0x000000000451A438>, <TextNode: '\\n'>]>}, {}]"
+[2016-06-24 08:25:24] DEBUG [django.template:927] Exception while resolving variable 'userx' in template 'home/index.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'userx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'userx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'userx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [userx] in "[{'None': None, 'True': True, 'False': False}, {'LANGUAGE_BIDI': False, 'STATIC_URL': '/static/', 'MEDIA_URL': '/media/', 'request': <WSGIRequest: GET '/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000044EE6D8>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x00000000044CC7B8>>, 'LANGUAGE_CODE': 'es', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10}, 'LANGUAGES': (('ja', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), ('zh-tw', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), ('fr', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), ('de', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), ('en', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), ('es', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), ('es-ar', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), ('es-pe', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), ('pt', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), ('pt-br', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000045122E8>, 'csrf_token': <SimpleLazyObject: '2qN10VHByaZztwi4YyInV4FHeAiOb2ZP'>, 'TIME_ZONE': 'Hora est. Pacífico, Sudamérica'}, {}, {'page_module': 'Inicio', 'page_title': 'Home Page.'}, {'block': <Block Node: header. Contents: [<TextNode: '\\n'>, <django.template.loader_tags.IncludeNode object at 0x000000000451A438>, <TextNode: '\\n'>]>}, {}]"
+[2016-06-24 08:25:25] WARNING [django.request:182] Not Found: /favicon.ico
+[2016-06-24 08:25:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\project\ve_americas\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'apps.home.urls' from 'F:\\project\\americas\\apps\\home\\urls.py'> (None:home) ^home/>], [<RegexURLPattern index ^$>], [<RegexURLResolver <module 'apps.space.urls' from 'F:\\project\\americas\\apps\\space\\urls.py'> (None:space) ^space/>], [<RegexURLResolver <module 'apps.sad.urls' from 'F:\\project\\americas\\apps\\sad\\urls.py'> (None:sad) ^sad/>], [<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\project\\americas\\apps\\mod_backend\\urls.py'> (None:mod_backend) ^mod_backend/>], [<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\project\\americas\\apps\\accounts\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\conf\\urls\\i18n.py'> (None:None) ^i18n/>], [<RegexURLPattern None ^jsi18n/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-06-24 08:25:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\project\ve_americas\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'apps.home.urls' from 'F:\\project\\americas\\apps\\home\\urls.py'> (None:home) ^home/>], [<RegexURLPattern index ^$>], [<RegexURLResolver <module 'apps.space.urls' from 'F:\\project\\americas\\apps\\space\\urls.py'> (None:space) ^space/>], [<RegexURLResolver <module 'apps.sad.urls' from 'F:\\project\\americas\\apps\\sad\\urls.py'> (None:sad) ^sad/>], [<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\project\\americas\\apps\\mod_backend\\urls.py'> (None:mod_backend) ^mod_backend/>], [<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\project\\americas\\apps\\accounts\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\conf\\urls\\i18n.py'> (None:None) ^i18n/>], [<RegexURLPattern None ^jsi18n/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\\\project\\\\ve_americas\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-06-24 08:25:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\project\ve_americas\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'apps.home.urls' from 'F:\\project\\americas\\apps\\home\\urls.py'> (None:home) ^home/>], [<RegexURLPattern index ^$>], [<RegexURLResolver <module 'apps.space.urls' from 'F:\\project\\americas\\apps\\space\\urls.py'> (None:space) ^space/>], [<RegexURLResolver <module 'apps.sad.urls' from 'F:\\project\\americas\\apps\\sad\\urls.py'> (None:sad) ^sad/>], [<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\project\\americas\\apps\\mod_backend\\urls.py'> (None:mod_backend) ^mod_backend/>], [<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\project\\americas\\apps\\accounts\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\conf\\urls\\i18n.py'> (None:None) ^i18n/>], [<RegexURLPattern None ^jsi18n/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'apps.home.urls' from 'F:\\\\project\\\\americas\\\\apps\\\\home\\\\urls.py'> (None:home) ^home/>"
+[2016-06-24 08:25:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\project\ve_americas\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'apps.home.urls' from 'F:\\project\\americas\\apps\\home\\urls.py'> (None:home) ^home/>], [<RegexURLPattern index ^$>], [<RegexURLResolver <module 'apps.space.urls' from 'F:\\project\\americas\\apps\\space\\urls.py'> (None:space) ^space/>], [<RegexURLResolver <module 'apps.sad.urls' from 'F:\\project\\americas\\apps\\sad\\urls.py'> (None:sad) ^sad/>], [<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\project\\americas\\apps\\mod_backend\\urls.py'> (None:mod_backend) ^mod_backend/>], [<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\project\\americas\\apps\\accounts\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\conf\\urls\\i18n.py'> (None:None) ^i18n/>], [<RegexURLPattern None ^jsi18n/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'apps.space.urls' from 'F:\\\\project\\\\americas\\\\apps\\\\space\\\\urls.py'> (None:space) ^space/>"
+[2016-06-24 08:25:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\project\ve_americas\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'apps.home.urls' from 'F:\\project\\americas\\apps\\home\\urls.py'> (None:home) ^home/>], [<RegexURLPattern index ^$>], [<RegexURLResolver <module 'apps.space.urls' from 'F:\\project\\americas\\apps\\space\\urls.py'> (None:space) ^space/>], [<RegexURLResolver <module 'apps.sad.urls' from 'F:\\project\\americas\\apps\\sad\\urls.py'> (None:sad) ^sad/>], [<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\project\\americas\\apps\\mod_backend\\urls.py'> (None:mod_backend) ^mod_backend/>], [<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\project\\americas\\apps\\accounts\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\conf\\urls\\i18n.py'> (None:None) ^i18n/>], [<RegexURLPattern None ^jsi18n/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'apps.sad.urls' from 'F:\\\\project\\\\americas\\\\apps\\\\sad\\\\urls.py'> (None:sad) ^sad/>"
+[2016-06-24 08:25:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\project\ve_americas\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'apps.home.urls' from 'F:\\project\\americas\\apps\\home\\urls.py'> (None:home) ^home/>], [<RegexURLPattern index ^$>], [<RegexURLResolver <module 'apps.space.urls' from 'F:\\project\\americas\\apps\\space\\urls.py'> (None:space) ^space/>], [<RegexURLResolver <module 'apps.sad.urls' from 'F:\\project\\americas\\apps\\sad\\urls.py'> (None:sad) ^sad/>], [<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\project\\americas\\apps\\mod_backend\\urls.py'> (None:mod_backend) ^mod_backend/>], [<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\project\\americas\\apps\\accounts\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\conf\\urls\\i18n.py'> (None:None) ^i18n/>], [<RegexURLPattern None ^jsi18n/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\\\project\\\\americas\\\\apps\\\\mod_backend\\\\urls.py'> (None:mod_backend) ^mod_backend/>"
+[2016-06-24 08:25:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\project\ve_americas\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'apps.home.urls' from 'F:\\project\\americas\\apps\\home\\urls.py'> (None:home) ^home/>], [<RegexURLPattern index ^$>], [<RegexURLResolver <module 'apps.space.urls' from 'F:\\project\\americas\\apps\\space\\urls.py'> (None:space) ^space/>], [<RegexURLResolver <module 'apps.sad.urls' from 'F:\\project\\americas\\apps\\sad\\urls.py'> (None:sad) ^sad/>], [<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\project\\americas\\apps\\mod_backend\\urls.py'> (None:mod_backend) ^mod_backend/>], [<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\project\\americas\\apps\\accounts\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\conf\\urls\\i18n.py'> (None:None) ^i18n/>], [<RegexURLPattern None ^jsi18n/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\\\project\\\\americas\\\\apps\\\\accounts\\\\urls.py'> (None:None) ^accounts/>"
+[2016-06-24 08:25:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\project\ve_americas\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'apps.home.urls' from 'F:\\project\\americas\\apps\\home\\urls.py'> (None:home) ^home/>], [<RegexURLPattern index ^$>], [<RegexURLResolver <module 'apps.space.urls' from 'F:\\project\\americas\\apps\\space\\urls.py'> (None:space) ^space/>], [<RegexURLResolver <module 'apps.sad.urls' from 'F:\\project\\americas\\apps\\sad\\urls.py'> (None:sad) ^sad/>], [<RegexURLResolver <module 'apps.mod_backend.urls' from 'F:\\project\\americas\\apps\\mod_backend\\urls.py'> (None:mod_backend) ^mod_backend/>], [<RegexURLResolver <module 'apps.accounts.urls' from 'F:\\project\\americas\\apps\\accounts\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\project\\ve_americas\\lib\\site-packages\\django\\conf\\urls\\i18n.py'> (None:None) ^i18n/>], [<RegexURLPattern None ^jsi18n/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.conf.urls.i18n' from 'F:\\\\project\\\\ve_americas\\\\lib\\\\site-packages\\\\django\\\\conf\\\\urls\\\\i18n.py'> (None:None) ^i18n/>"
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'redirect_to' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'redirect_to'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'redirect_to'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'redirect_to'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [redirect_to] in "[{'None': None, 'True': True, 'False': False}, {'LANGUAGE_BIDI': False, 'STATIC_URL': '/static/', 'MEDIA_URL': '/media/', 'request': <WSGIRequest: GET '/accounts/login/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, 'LANGUAGE_CODE': 'es', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10}, 'LANGUAGES': (('ja', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), ('zh-tw', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), ('fr', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), ('de', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), ('en', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), ('es', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), ('es-ar', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), ('es-pe', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), ('pt', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), ('pt-br', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, 'csrf_token': <SimpleLazyObject: '2qN10VHByaZztwi4YyInV4FHeAiOb2ZP'>, 'TIME_ZONE': 'Hora est. Pacífico, Sudamérica'}, {}, {'form': <LoginForm bound=False, valid=Unknown, fields=(username;password;remember_me)>, 'view': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>}, {'block': <Block Node: header. Contents: [<TextNode: '\\n'>, <django.template.loader_tags.IncludeNode object at 0x00000000046E6470>, <TextNode: '\\n'>]>}, {}]"
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'userx' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'userx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'userx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'userx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [userx] in "[{'None': None, 'True': True, 'False': False}, {'LANGUAGE_BIDI': False, 'STATIC_URL': '/static/', 'MEDIA_URL': '/media/', 'request': <WSGIRequest: GET '/accounts/login/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, 'LANGUAGE_CODE': 'es', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10}, 'LANGUAGES': (('ja', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), ('zh-tw', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), ('fr', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), ('de', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), ('en', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), ('es', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), ('es-ar', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), ('es-pe', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), ('pt', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), ('pt-br', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, 'csrf_token': <SimpleLazyObject: '2qN10VHByaZztwi4YyInV4FHeAiOb2ZP'>, 'TIME_ZONE': 'Hora est. Pacífico, Sudamérica'}, {}, {'form': <LoginForm bound=False, valid=Unknown, fields=(username;password;remember_me)>, 'view': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>}, {'block': <Block Node: header. Contents: [<TextNode: '\\n'>, <django.template.loader_tags.IncludeNode object at 0x00000000046E6470>, <TextNode: '\\n'>]>}, {}]"
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'tag' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x00000000045122E8>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=Unknown, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'wrapper_class' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x00000000045122E8>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=Unknown, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'tag' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x00000000045122E8>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=False, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'tag' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x0000000004512550>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=False, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'wrapper_class' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x0000000004512550>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=False, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'tag' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x0000000004512550>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=False, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'tag' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x00000000046E6C50>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=False, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'wrapper_class' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x00000000046E6C50>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=False, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.template:927] Exception while resolving variable 'tag' in template 'bootstrap3/field.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in '[{\'None\': None, \'True\': True, \'False\': False}, {\'flat_attrs\': \'\', \'None\': None, \'view\': <apps.accounts.views.LoginView object at 0x00000000046C6EF0>, \'label_class\': \'\', \'LANGUAGE_CODE\': \'es\', \'LANGUAGES\': ((\'ja\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), (\'zh-tw\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), (\'fr\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), (\'de\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), (\'en\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), (\'es\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), (\'es-ar\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), (\'es-pe\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), (\'pt\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), (\'pt-br\', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000452BA58>, \'form_class\': \'js-validate form-vertical\', \'form_method\': \'post\', \'is_formset\': False, \'False\': False, \'field_class\': \'\', \'labelclass\': None, \'form_show_labels\': True, \'request\': <WSGIRequest: GET \'/accounts/login/\'>, \'block\': <Block Node: rootcontainer. Contents: [<TextNode: \'\\n\\n<div id="shell-load">\\n \'>, <django.templatetags.i18n.TranslateNode object at 0x000000000452BBE0>, <TextNode: \'</h3>\\n      </div>\\n      \'>, <django.template.library.SimpleNode object at 0x000000000452BD30>, <TextNode: \'\\n\\n      \'>, <crispy_forms.templatetags.crispy_forms_tags.CrispyFormNode object at 0x000000000452B4A8>, <TextNode: \'\\n      \'>, <django.template.defaulttags.URLNode object at 0x000000000452B9E8>, <TextNode: \'\\n      \'>, <IfNode>, <TextNode: \'\\n      \\n    </div>\\n  </di\'>]>, \'disable_csrf\': False, \'form_attrs\': {\'class\': \'js-validate form-vertical\'}, \'form_tag\': True, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30, \'DEBUG\': 10}, \'form_error_title\': None, \'label_size\': 0, \'include_media\': True, \'field\': <django.forms.boundfield.BoundField object at 0x00000000046E6C50>, \'csrf_token\': <SimpleLazyObject: \'2qN10VHByaZztwi4YyInV4FHeAiOb2ZP\'>, \'error_text_inline\': True, \'LANGUAGE_BIDI\': False, \'STATIC_URL\': \'/static/\', \'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000000046C6BE0>>, \'form_id\': \'\', \'form_style\': \'\', \'help_text_inline\': False, \'template_pack\': \'bootstrap3\', \'formset_error_title\': None, \'inputs\': [], \'MEDIA_URL\': \'/media/\', \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000046C6C18>, \'attrs\': {\'class\': \'js-validate form-vertical\'}, \'form\': <LoginForm bound=False, valid=False, fields=(username;password;remember_me)>, \'form_show_errors\': True, \'html5_required\': False, \'form_action\': \'\', \'True\': True, \'TIME_ZONE\': \'Hora est. Pacífico, Sudamérica\'}]'
+[2016-06-24 08:25:26] DEBUG [django.db.backends:89] (0.001) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'kgm5gvc467yro3c0pnu72cduittflp5u' LIMIT 1; args=('kgm5gvc467yro3c0pnu72cduittflp5u',)
+[2016-06-24 08:25:26] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-06-24 08:25:26] DEBUG [django.db.backends:89] (0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'kgm5gvc467yro3c0pnu72cduittflp5u', 'NGEyZDVmNzk0YjhjMTBhZTBiNzkzZWY4NzNlOWUxYWRmZTI0NjFlNjp7InRlc3Rjb29raWUiOiJ3b3JrZWQifQ==', '2016-07-08 13:25:26.661663'; args=('kgm5gvc467yro3c0pnu72cduittflp5u', 'NGEyZDVmNzk0YjhjMTBhZTBiNzkzZWY4NzNlOWUxYWRmZTI0NjFlNjp7InRlc3Rjb29raWUiOiJ3b3JrZWQifQ==', '2016-07-08 13:25:26.661663')
+[2016-06-24 08:25:27] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-06-24 13:25:27.083642' AND "django_session"."session_key" = 'kgm5gvc467yro3c0pnu72cduittflp5u'); args=('2016-06-24 13:25:27.083642', 'kgm5gvc467yro3c0pnu72cduittflp5u')
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-06-24 13:25:32.071924' AND "django_session"."session_key" = 'kgm5gvc467yro3c0pnu72cduittflp5u'); args=('2016-06-24 13:25:32.071924', 'kgm5gvc467yro3c0pnu72cduittflp5u')
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "auth_user"."last_headquar_id", "auth_user"."last_module_id", "auth_user"."person_id" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=('admin',)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "auth_user"."last_headquar_id", "auth_user"."last_module_id", "auth_user"."person_id" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=('admin',)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'khp1spm5jpuz65tildyhulgfqka40mok' LIMIT 1; args=('khp1spm5jpuz65tildyhulgfqka40mok',)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'khp1spm5jpuz65tildyhulgfqka40mok', 'ODY0MTU0MTFiMWM1ZGY2NjVjODgwZmZhMmFmZmFmMmU4ZjFjMzFhOTp7Il9zZXNzaW9uX2V4cGlyeSI6MH0=', '2016-07-08 13:25:32.121957'; args=('khp1spm5jpuz65tildyhulgfqka40mok', 'ODY0MTU0MTFiMWM1ZGY2NjVjODgwZmZhMmFmZmFmMmU4ZjFjMzFhOTp7Il9zZXNzaW9uX2V4cGlyeSI6MH0=', '2016-07-08 13:25:32.121957')
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'kgm5gvc467yro3c0pnu72cduittflp5u'; args=('kgm5gvc467yro3c0pnu72cduittflp5u',)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('kgm5gvc467yro3c0pnu72cduittflp5u'); args=('kgm5gvc467yro3c0pnu72cduittflp5u',)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.001) SELECT "params_person"."id", "params_person"."identity_type", "params_person"."identity_num", "params_person"."tipo_usuario_id", "params_person"."first_name", "params_person"."last_name", "params_person"."domicile", "params_person"."phone", "params_person"."cell_phone", "params_person"."email", "params_person"."gender", "params_person"."birth_date", "params_person"."photo" FROM "params_person" WHERE "params_person"."id" = 2; args=(2,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) UPDATE "auth_user" SET "last_login" = '2016-06-24 13:25:32.279255' WHERE "auth_user"."id" = 1; args=('2016-06-24 13:25:32.279255', 1)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "auth_user"."last_headquar_id", "auth_user"."last_module_id", "auth_user"."person_id" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.001) UPDATE "django_session" SET "session_data" = 'OGZiMzlkMjg0MmMyYzIzODVkMjk1MGE3NzQ0ZTcxZjYzNjY0NGNlMzp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjYjNmMjliYjY3MDgxZDcxODBkMjcxNGI1YzhkMDc2ODYxODBiY2Q4IiwiX2F1dGhfdXNlcl9pZCI6IjEifQ==', "expire_date" = '2016-07-08 13:25:32.351923' WHERE "django_session"."session_key" = 'khp1spm5jpuz65tildyhulgfqka40mok'; args=('OGZiMzlkMjg0MmMyYzIzODVkMjk1MGE3NzQ0ZTcxZjYzNjY0NGNlMzp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjYjNmMjliYjY3MDgxZDcxODBkMjcxNGI1YzhkMDc2ODYxODBiY2Q4IiwiX2F1dGhfdXNlcl9pZCI6IjEifQ==', '2016-07-08 13:25:32.351923', 'khp1spm5jpuz65tildyhulgfqka40mok')
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-06-24 13:25:32.765922' AND "django_session"."session_key" = 'khp1spm5jpuz65tildyhulgfqka40mok'); args=('2016-06-24 13:25:32.765922', 'khp1spm5jpuz65tildyhulgfqka40mok')
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "auth_user"."last_headquar_id", "auth_user"."last_module_id", "auth_user"."person_id" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "space_headquar"."id", "space_headquar"."name", "space_headquar"."phone", "space_headquar"."address", "space_headquar"."is_main", "space_headquar"."is_active", "space_headquar"."is_actived", "space_headquar"."created_at", "space_headquar"."updated_at", "space_headquar"."association_id", "space_headquar"."enterprise_id" FROM "space_headquar" WHERE "space_headquar"."id" = 1; args=(1,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "sad_module"."id", "sad_module"."module", "sad_module"."name", "sad_module"."is_active", "sad_module"."icon", "sad_module"."description", "sad_module"."created_at", "sad_module"."updated_at" FROM "sad_module" WHERE "sad_module"."id" = 1; args=(1,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "space_association"."id", "space_association"."name", "space_association"."logo", "space_association"."type_a", "space_association"."is_active", "space_association"."is_actived", "space_association"."created_at", "space_association"."updated_at", "space_association"."solution_id" FROM "space_association" WHERE "space_association"."id" = 1; args=(1,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "space_enterprise"."id", "space_enterprise"."name", "space_enterprise"."cuenta_bancaria_id", "space_enterprise"."logo", "space_enterprise"."tax_id", "space_enterprise"."type_e", "space_enterprise"."is_active", "space_enterprise"."is_actived", "space_enterprise"."created_at", "space_enterprise"."updated_at", "space_enterprise"."solution_id" FROM "space_enterprise" WHERE "space_enterprise"."id" = 1; args=(1,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "auth_user"."last_headquar_id", "auth_user"."last_module_id", "auth_user"."person_id" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) SELECT "params_person"."id", "params_person"."identity_type", "params_person"."identity_num", "params_person"."tipo_usuario_id", "params_person"."first_name", "params_person"."last_name", "params_person"."domicile", "params_person"."phone", "params_person"."cell_phone", "params_person"."email", "params_person"."gender", "params_person"."birth_date", "params_person"."photo" FROM "params_person" WHERE "params_person"."id" = 2; args=(2,)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$24000$pN2ZzdfX96R5$8q4hUO9aWo611Jq8JWu22FNDWC39p6tgLYiUU/eGuNU=', "last_login" = '2016-06-24 13:25:32.783932', "is_superuser" = 1, "username" = 'admin', "first_name" = 'Franklin', "last_name" = 'Condori', "email" = '', "is_staff" = 1, "is_active" = 1, "date_joined" = '2014-09-25 11:03:03.450000', "last_headquar_id" = '1', "last_module_id" = '1', "person_id" = 2 WHERE "auth_user"."id" = 1; args=('pbkdf2_sha256$24000$pN2ZzdfX96R5$8q4hUO9aWo611Jq8JWu22FNDWC39p6tgLYiUU/eGuNU=', '2016-06-24 13:25:32.783932', True, 'admin', 'Franklin', 'Condori', '', True, True, '2014-09-25 11:03:03.450000', '1', '1', 2, 1)
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.001) BEGIN; args=None
+[2016-06-24 08:25:32] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'MTI2NDcxNDEwOTFkNDY1Y2ZlNGVmNGE5YWY1MTIxODg1MmMxMWFlMTp7ImVudGVycHJpc2VfaWQiOjEsIl9hdXRoX3VzZXJfaWQiOiIxIiwiX3Nlc3Npb25fZXhwaXJ5IjowLCJoZWFkcXVhcl9pZCI6MSwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjYjNmMjliYjY3MDgxZDcxODBkMjcxNGI1YzhkMDc2ODYxODBiY2Q4IiwiYXNzb2NpYXRpb25faWQiOjF9', "expire_date" = '2016-07-08 13:25:32.835798' WHERE "django_session"."session_key" = 'khp1spm5jpuz65tildyhulgfqka40mok'; args=('MTI2NDcxNDEwOTFkNDY1Y2ZlNGVmNGE5YWY1MTIxODg1MmMxMWFlMTp7ImVudGVycHJpc2VfaWQiOjEsIl9hdXRoX3VzZXJfaWQiOiIxIiwiX3Nlc3Npb25fZXhwaXJ5IjowLCJoZWFkcXVhcl9pZCI6MSwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjYjNmMjliYjY3MDgxZDcxODBkMjcxNGI1YzhkMDc2ODYxODBiY2Q4IiwiYXNzb2NpYXRpb25faWQiOjF9', '2016-07-08 13:25:32.835798', 'khp1spm5jpuz65tildyhulgfqka40mok')
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-06-24 13:25:33.016078' AND "django_session"."session_key" = 'khp1spm5jpuz65tildyhulgfqka40mok'); args=('2016-06-24 13:25:33.016078', 'khp1spm5jpuz65tildyhulgfqka40mok')
+[2016-06-24 08:25:33] DEBUG [django.template:927] Exception while resolving variable 'site_title' in template 'mod_backend/base_mod_backend.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'site_title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'site_title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'site_title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [site_title] in "[{'None': None, 'True': True, 'False': False}, {'LANGUAGE_BIDI': False, 'STATIC_URL': '/static/', 'MEDIA_URL': '/media/', 'request': <WSGIRequest: GET '/mod_backend/dashboard/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000498E828>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x00000000049846A8>>, 'LANGUAGE_CODE': 'es', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10}, 'LANGUAGES': (('ja', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), ('zh-tw', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), ('fr', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), ('de', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), ('en', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), ('es', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), ('es-ar', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), ('es-pe', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), ('pt', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), ('pt-br', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004523978>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000004984620>>, 'TIME_ZONE': 'Hora est. Pacífico, Sudamérica'}, {}, {'cmi': 'mod_backend:dashboard', 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000498E7B8>, 'opts': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704208>}, {'block': <Block Node: title. Contents: [<TextNode: ' '>, <Variable Node: title>, <TextNode: ' | '>, <Variable Node: site_title|default:_('Backend site admin')>, <TextNode: ' '>]>}]"
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "auth_user"."last_headquar_id", "auth_user"."last_module_id", "auth_user"."person_id" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.001) SELECT DISTINCT "sad_menu"."id", "sad_menu"."module", "sad_menu"."title", "sad_menu"."url", "sad_menu"."pos", "sad_menu"."icon", "sad_menu"."is_active", "sad_menu"."description", "sad_menu"."created_at", "sad_menu"."updated_at", "sad_menu"."permission_id", "sad_menu"."parent_id" FROM "sad_menu" INNER JOIN "sad_menu" T2 ON ("sad_menu"."id" = T2."parent_id") WHERE ("sad_menu"."is_active" = 1 AND T2."id" IN (SELECT U0."id" FROM "sad_menu" U0 WHERE (U0."id" IS NOT NULL AND U0."is_active" = 1 AND U0."module" = 'BACKEND')) AND "sad_menu"."module" = 'BACKEND') ORDER BY "sad_menu"."pos" ASC; args=(True, True, 'BACKEND', 'BACKEND')
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.000) SELECT "space_headquar"."id", "space_headquar"."name", "space_headquar"."phone", "space_headquar"."address", "space_headquar"."is_main", "space_headquar"."is_active", "space_headquar"."is_actived", "space_headquar"."created_at", "space_headquar"."updated_at", "space_headquar"."association_id", "space_headquar"."enterprise_id" FROM "space_headquar" WHERE "space_headquar"."id" = 1; args=(1,)
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.000) SELECT "space_enterprise"."id", "space_enterprise"."name", "space_enterprise"."cuenta_bancaria_id", "space_enterprise"."logo", "space_enterprise"."tax_id", "space_enterprise"."type_e", "space_enterprise"."is_active", "space_enterprise"."is_actived", "space_enterprise"."created_at", "space_enterprise"."updated_at", "space_enterprise"."solution_id" FROM "space_enterprise" WHERE "space_enterprise"."id" = 1; args=(1,)
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.000) SELECT "sad_menu"."id", "sad_menu"."module", "sad_menu"."title", "sad_menu"."url", "sad_menu"."pos", "sad_menu"."icon", "sad_menu"."is_active", "sad_menu"."description", "sad_menu"."created_at", "sad_menu"."updated_at", "sad_menu"."permission_id", "sad_menu"."parent_id" FROM "sad_menu" WHERE ("sad_menu"."id" IS NOT NULL AND "sad_menu"."is_active" = 1 AND "sad_menu"."parent_id" = 11 AND "sad_menu"."module" = 'BACKEND') ORDER BY "sad_menu"."pos" ASC; args=(True, 11, 'BACKEND')
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.000) SELECT "sad_menu"."id", "sad_menu"."module", "sad_menu"."title", "sad_menu"."url", "sad_menu"."pos", "sad_menu"."icon", "sad_menu"."is_active", "sad_menu"."description", "sad_menu"."created_at", "sad_menu"."updated_at", "sad_menu"."permission_id", "sad_menu"."parent_id" FROM "sad_menu" WHERE ("sad_menu"."id" IS NOT NULL AND "sad_menu"."is_active" = 1 AND "sad_menu"."parent_id" = 104 AND "sad_menu"."module" = 'BACKEND') ORDER BY "sad_menu"."pos" ASC; args=(True, 104, 'BACKEND')
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.000) SELECT "sad_menu"."id", "sad_menu"."module", "sad_menu"."title", "sad_menu"."url", "sad_menu"."pos", "sad_menu"."icon", "sad_menu"."is_active", "sad_menu"."description", "sad_menu"."created_at", "sad_menu"."updated_at", "sad_menu"."permission_id", "sad_menu"."parent_id" FROM "sad_menu" WHERE ("sad_menu"."id" IS NOT NULL AND "sad_menu"."is_active" = 1 AND "sad_menu"."parent_id" = 102 AND "sad_menu"."module" = 'BACKEND') ORDER BY "sad_menu"."pos" ASC; args=(True, 102, 'BACKEND')
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.000) SELECT "sad_menu"."id", "sad_menu"."module", "sad_menu"."title", "sad_menu"."url", "sad_menu"."pos", "sad_menu"."icon", "sad_menu"."is_active", "sad_menu"."description", "sad_menu"."created_at", "sad_menu"."updated_at", "sad_menu"."permission_id", "sad_menu"."parent_id" FROM "sad_menu" WHERE ("sad_menu"."id" IS NOT NULL AND "sad_menu"."is_active" = 1 AND "sad_menu"."parent_id" = 13 AND "sad_menu"."module" = 'BACKEND') ORDER BY "sad_menu"."pos" ASC; args=(True, 13, 'BACKEND')
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.000) SELECT "sad_menu"."id", "sad_menu"."module", "sad_menu"."title", "sad_menu"."url", "sad_menu"."pos", "sad_menu"."icon", "sad_menu"."is_active", "sad_menu"."description", "sad_menu"."created_at", "sad_menu"."updated_at", "sad_menu"."permission_id", "sad_menu"."parent_id" FROM "sad_menu" WHERE ("sad_menu"."id" IS NOT NULL AND "sad_menu"."is_active" = 1 AND "sad_menu"."parent_id" = 3 AND "sad_menu"."module" = 'BACKEND') ORDER BY "sad_menu"."pos" ASC; args=(True, 3, 'BACKEND')
+[2016-06-24 08:25:33] DEBUG [django.db.backends:89] (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-06-24 13:25:33.380480' AND "django_session"."session_key" = 'khp1spm5jpuz65tildyhulgfqka40mok'); args=('2016-06-24 13:25:33.380480', 'khp1spm5jpuz65tildyhulgfqka40mok')
+[2016-06-24 08:25:40] DEBUG [django.db.backends:89] (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-06-24 13:25:40.290036' AND "django_session"."session_key" = 'khp1spm5jpuz65tildyhulgfqka40mok'); args=('2016-06-24 13:25:40.290036', 'khp1spm5jpuz65tildyhulgfqka40mok')
+[2016-06-24 08:25:40] DEBUG [django.db.backends:89] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "auth_user"."last_headquar_id", "auth_user"."last_module_id", "auth_user"."person_id" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2016-06-24 08:25:40] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'None': None, 'True': True, 'False': False}, {'LANGUAGE_BIDI': False, 'STATIC_URL': '/static/', 'MEDIA_URL': '/media/', 'request': <WSGIRequest: GET '/admin/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049B2EF0>, 'user': <SimpleLazyObject: <User: admin>>, 'LANGUAGE_CODE': 'es', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10}, 'LANGUAGES': (('ja', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), ('zh-tw', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), ('fr', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), ('de', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), ('en', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), ('es', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), ('es-ar', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), ('es-pe', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), ('pt', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), ('pt-br', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000047D4AC8>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000004993B70>>, 'TIME_ZONE': 'Hora est. Pacífico, Sudamérica'}, {}, {'site_url': '/', 'LANGUAGE_CODE': 'es', 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C8FCF8>, 'LANGUAGE_BIDI': False, 'available_apps': [{'app_label': 'auth', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C987B8>, 'models': [{'object_name': 'Group', 'admin_url': '/admin/auth/group/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A6A0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/auth/group/add/'}, {'object_name': 'Permission', 'admin_url': '/admin/auth/permission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451ADD8>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/auth/permission/add/'}], 'app_url': '/admin/auth/'}, {'app_label': 'cobranza', 'has_module_perms': True, 'name': 'Cobranza', 'models': [{'object_name': 'Concepto', 'admin_url': '/admin/cobranza/concepto/', 'name': 'Conceptos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/concepto/add/'}, {'object_name': 'Deuda', 'admin_url': '/admin/cobranza/deuda/', 'name': 'Deudas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/deuda/add/'}, {'object_name': 'Moneda', 'admin_url': '/admin/cobranza/moneda/', 'name': 'Monedas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/moneda/add/'}], 'app_url': '/admin/cobranza/'}, {'app_label': 'contabilidad', 'has_module_perms': True, 'name': 'Contabilidad', 'models': [{'object_name': 'Egreso', 'admin_url': '/admin/contabilidad/egreso/', 'name': 'Egresos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contabilidad/egreso/add/'}, {'object_name': 'Ingreso', 'admin_url': '/admin/contabilidad/ingreso/', 'name': 'Ingresos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contabilidad/ingreso/add/'}], 'app_url': '/admin/contabilidad/'}, {'app_label': 'inmueble', 'has_module_perms': True, 'name': 'Inmueble', 'models': [{'object_name': 'Lote', 'admin_url': '/admin/inmueble/lote/', 'name': 'Lotes', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/inmueble/lote/add/'}], 'app_url': '/admin/inmueble/'}, {'app_label': 'params', 'has_module_perms': True, 'name': 'Params', 'models': [{'object_name': 'Person', 'admin_url': '/admin/params/person/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CAF98>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/params/person/add/'}], 'app_url': '/admin/params/'}, {'app_label': 'flatpages', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003CAB198>, 'models': [{'object_name': 'FlatPage', 'admin_url': '/admin/flatpages/flatpage/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A940>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/flatpages/flatpage/add/'}], 'app_url': '/admin/flatpages/'}, {'app_label': 'sad', 'has_module_perms': True, 'name': 'Sad', 'models': [{'object_name': 'Access', 'admin_url': '/admin/sad/access/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CA588>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/access/add/'}, {'object_name': 'Backup', 'admin_url': '/admin/sad/backup/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A278>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/backup/add/'}, {'object_name': 'Menu', 'admin_url': '/admin/sad/menu/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CA470>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/menu/add/'}, {'object_name': 'Module', 'admin_url': '/admin/sad/module/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CABA8>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/module/add/'}, {'object_name': 'Ticket', 'admin_url': '/admin/sad/ticket/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451AA58>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/ticket/add/'}, {'object_name': 'UserAssociation', 'admin_url': '/admin/sad/userassociation/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CAFD0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userassociation/add/'}, {'object_name': 'UserEnterprise', 'admin_url': '/admin/sad/userenterprise/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A240>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userenterprise/add/'}, {'object_name': 'UserHeadquar', 'admin_url': '/admin/sad/userheadquar/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A438>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userheadquar/add/'}, {'object_name': 'User', 'admin_url': '/admin/sad/user/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CA6A0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/user/add/'}], 'app_url': '/admin/sad/'}, {'app_label': 'sites', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003CA2E10>, 'models': [{'object_name': 'Site', 'admin_url': '/admin/sites/site/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CAE10>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sites/site/add/'}], 'app_url': '/admin/sites/'}, {'app_label': 'space', 'has_module_perms': True, 'name': 'Space', 'models': [{'object_name': 'Association', 'admin_url': '/admin/space/association/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CA668>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/association/add/'}, {'object_name': 'Cuenta', 'admin_url': '/admin/space/cuenta/', 'name': 'Cuentas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/cuenta/add/'}, {'object_name': 'Enterprise', 'admin_url': '/admin/space/enterprise/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A358>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/enterprise/add/'}, {'object_name': 'EntidadBancaria', 'admin_url': '/admin/space/entidadbancaria/', 'name': 'EntidadBancarias', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/entidadbancaria/add/'}, {'object_name': 'Headquar', 'admin_url': '/admin/space/headquar/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451AD68>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/headquar/add/'}, {'object_name': 'Solution', 'admin_url': '/admin/space/solution/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A128>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/solution/add/'}], 'app_url': '/admin/space/'}, {'app_label': 'contenttypes', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C98F28>, 'models': [{'object_name': 'ContentType', 'admin_url': '/admin/contenttypes/contenttype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A198>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contenttypes/contenttype/add/'}], 'app_url': '/admin/contenttypes/'}], 'app_list': [{'app_label': 'auth', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C987B8>, 'models': [{'object_name': 'Group', 'admin_url': '/admin/auth/group/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000047044A8>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/auth/group/add/'}, {'object_name': 'Permission', 'admin_url': '/admin/auth/permission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704DA0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/auth/permission/add/'}], 'app_url': '/admin/auth/'}, {'app_label': 'cobranza', 'has_module_perms': True, 'name': 'Cobranza', 'models': [{'object_name': 'Concepto', 'admin_url': '/admin/cobranza/concepto/', 'name': 'Conceptos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/concepto/add/'}, {'object_name': 'Deuda', 'admin_url': '/admin/cobranza/deuda/', 'name': 'Deudas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/deuda/add/'}, {'object_name': 'Moneda', 'admin_url': '/admin/cobranza/moneda/', 'name': 'Monedas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/moneda/add/'}], 'app_url': '/admin/cobranza/'}, {'app_label': 'contabilidad', 'has_module_perms': True, 'name': 'Contabilidad', 'models': [{'object_name': 'Egreso', 'admin_url': '/admin/contabilidad/egreso/', 'name': 'Egresos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contabilidad/egreso/add/'}, {'object_name': 'Ingreso', 'admin_url': '/admin/contabilidad/ingreso/', 'name': 'Ingresos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contabilidad/ingreso/add/'}], 'app_url': '/admin/contabilidad/'}, {'app_label': 'inmueble', 'has_module_perms': True, 'name': 'Inmueble', 'models': [{'object_name': 'Lote', 'admin_url': '/admin/inmueble/lote/', 'name': 'Lotes', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/inmueble/lote/add/'}], 'app_url': '/admin/inmueble/'}, {'app_label': 'params', 'has_module_perms': True, 'name': 'Params', 'models': [{'object_name': 'Person', 'admin_url': '/admin/params/person/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A518>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/params/person/add/'}], 'app_url': '/admin/params/'}, {'app_label': 'flatpages', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003CAB198>, 'models': [{'object_name': 'FlatPage', 'admin_url': '/admin/flatpages/flatpage/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000452BC88>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/flatpages/flatpage/add/'}], 'app_url': '/admin/flatpages/'}, {'app_label': 'sad', 'has_module_perms': True, 'name': 'Sad', 'models': [{'object_name': 'Access', 'admin_url': '/admin/sad/access/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046ECE48>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/access/add/'}, {'object_name': 'Backup', 'admin_url': '/admin/sad/backup/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704358>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/backup/add/'}, {'object_name': 'Menu', 'admin_url': '/admin/sad/menu/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704A90>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/menu/add/'}, {'object_name': 'Module', 'admin_url': '/admin/sad/module/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000033C6780>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/module/add/'}, {'object_name': 'Ticket', 'admin_url': '/admin/sad/ticket/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704D30>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/ticket/add/'}, {'object_name': 'UserAssociation', 'admin_url': '/admin/sad/userassociation/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046EC128>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userassociation/add/'}, {'object_name': 'UserEnterprise', 'admin_url': '/admin/sad/userenterprise/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000047046A0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userenterprise/add/'}, {'object_name': 'UserHeadquar', 'admin_url': '/admin/sad/userheadquar/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000452BDD8>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userheadquar/add/'}, {'object_name': 'User', 'admin_url': '/admin/sad/user/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451AC88>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/user/add/'}], 'app_url': '/admin/sad/'}, {'app_label': 'sites', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003CA2E10>, 'models': [{'object_name': 'Site', 'admin_url': '/admin/sites/site/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704898>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sites/site/add/'}], 'app_url': '/admin/sites/'}, {'app_label': 'space', 'has_module_perms': True, 'name': 'Space', 'models': [{'object_name': 'Association', 'admin_url': '/admin/space/association/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704FD0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/association/add/'}, {'object_name': 'Cuenta', 'admin_url': '/admin/space/cuenta/', 'name': 'Cuentas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/cuenta/add/'}, {'object_name': 'Enterprise', 'admin_url': '/admin/space/enterprise/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004996400>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/enterprise/add/'}, {'object_name': 'EntidadBancaria', 'admin_url': '/admin/space/entidadbancaria/', 'name': 'EntidadBancarias', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/entidadbancaria/add/'}, {'object_name': 'Headquar', 'admin_url': '/admin/space/headquar/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004996390>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/headquar/add/'}, {'object_name': 'Solution', 'admin_url': '/admin/space/solution/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004530080>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/solution/add/'}], 'app_url': '/admin/space/'}, {'app_label': 'contenttypes', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C98F28>, 'models': [{'object_name': 'ContentType', 'admin_url': '/admin/contenttypes/contenttype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000044B9E80>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contenttypes/contenttype/add/'}], 'app_url': '/admin/contenttypes/'}], 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C8FB00>, 'has_permission': True, 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C8FBA8>}]"
+[2016-06-24 08:25:40] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "F:\project\ve_americas\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\ve_americas\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'None': None, 'True': True, 'False': False}, {'LANGUAGE_BIDI': False, 'STATIC_URL': '/static/', 'MEDIA_URL': '/media/', 'request': <WSGIRequest: GET '/admin/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049B2EF0>, 'user': <SimpleLazyObject: <User: admin>>, 'LANGUAGE_CODE': 'es', 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10}, 'LANGUAGES': (('ja', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2B0>), ('zh-tw', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE2E8>), ('fr', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE358>), ('de', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE278>), ('en', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DEE320>), ('es', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB6A0>), ('es-ar', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB668>), ('es-pe', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB630>), ('pt', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB5C0>), ('pt-br', <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000002DFB748>)), 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000047D4AC8>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000004993B70>>, 'TIME_ZONE': 'Hora est. Pacífico, Sudamérica'}, {}, {'site_url': '/', 'LANGUAGE_CODE': 'es', 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C8FCF8>, 'LANGUAGE_BIDI': False, 'available_apps': [{'app_label': 'auth', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C987B8>, 'models': [{'object_name': 'Group', 'admin_url': '/admin/auth/group/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A6A0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/auth/group/add/'}, {'object_name': 'Permission', 'admin_url': '/admin/auth/permission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451ADD8>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/auth/permission/add/'}], 'app_url': '/admin/auth/'}, {'app_label': 'cobranza', 'has_module_perms': True, 'name': 'Cobranza', 'models': [{'object_name': 'Concepto', 'admin_url': '/admin/cobranza/concepto/', 'name': 'Conceptos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/concepto/add/'}, {'object_name': 'Deuda', 'admin_url': '/admin/cobranza/deuda/', 'name': 'Deudas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/deuda/add/'}, {'object_name': 'Moneda', 'admin_url': '/admin/cobranza/moneda/', 'name': 'Monedas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/moneda/add/'}], 'app_url': '/admin/cobranza/'}, {'app_label': 'contabilidad', 'has_module_perms': True, 'name': 'Contabilidad', 'models': [{'object_name': 'Egreso', 'admin_url': '/admin/contabilidad/egreso/', 'name': 'Egresos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contabilidad/egreso/add/'}, {'object_name': 'Ingreso', 'admin_url': '/admin/contabilidad/ingreso/', 'name': 'Ingresos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contabilidad/ingreso/add/'}], 'app_url': '/admin/contabilidad/'}, {'app_label': 'inmueble', 'has_module_perms': True, 'name': 'Inmueble', 'models': [{'object_name': 'Lote', 'admin_url': '/admin/inmueble/lote/', 'name': 'Lotes', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/inmueble/lote/add/'}], 'app_url': '/admin/inmueble/'}, {'app_label': 'params', 'has_module_perms': True, 'name': 'Params', 'models': [{'object_name': 'Person', 'admin_url': '/admin/params/person/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CAF98>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/params/person/add/'}], 'app_url': '/admin/params/'}, {'app_label': 'flatpages', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003CAB198>, 'models': [{'object_name': 'FlatPage', 'admin_url': '/admin/flatpages/flatpage/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A940>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/flatpages/flatpage/add/'}], 'app_url': '/admin/flatpages/'}, {'app_label': 'sad', 'has_module_perms': True, 'name': 'Sad', 'models': [{'object_name': 'Access', 'admin_url': '/admin/sad/access/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CA588>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/access/add/'}, {'object_name': 'Backup', 'admin_url': '/admin/sad/backup/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A278>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/backup/add/'}, {'object_name': 'Menu', 'admin_url': '/admin/sad/menu/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CA470>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/menu/add/'}, {'object_name': 'Module', 'admin_url': '/admin/sad/module/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CABA8>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/module/add/'}, {'object_name': 'Ticket', 'admin_url': '/admin/sad/ticket/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451AA58>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/ticket/add/'}, {'object_name': 'UserAssociation', 'admin_url': '/admin/sad/userassociation/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CAFD0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userassociation/add/'}, {'object_name': 'UserEnterprise', 'admin_url': '/admin/sad/userenterprise/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A240>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userenterprise/add/'}, {'object_name': 'UserHeadquar', 'admin_url': '/admin/sad/userheadquar/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A438>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userheadquar/add/'}, {'object_name': 'User', 'admin_url': '/admin/sad/user/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CA6A0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/user/add/'}], 'app_url': '/admin/sad/'}, {'app_label': 'sites', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003CA2E10>, 'models': [{'object_name': 'Site', 'admin_url': '/admin/sites/site/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CAE10>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sites/site/add/'}], 'app_url': '/admin/sites/'}, {'app_label': 'space', 'has_module_perms': True, 'name': 'Space', 'models': [{'object_name': 'Association', 'admin_url': '/admin/space/association/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046CA668>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/association/add/'}, {'object_name': 'Cuenta', 'admin_url': '/admin/space/cuenta/', 'name': 'Cuentas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/cuenta/add/'}, {'object_name': 'Enterprise', 'admin_url': '/admin/space/enterprise/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A358>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/enterprise/add/'}, {'object_name': 'EntidadBancaria', 'admin_url': '/admin/space/entidadbancaria/', 'name': 'EntidadBancarias', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/entidadbancaria/add/'}, {'object_name': 'Headquar', 'admin_url': '/admin/space/headquar/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451AD68>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/headquar/add/'}, {'object_name': 'Solution', 'admin_url': '/admin/space/solution/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A128>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/solution/add/'}], 'app_url': '/admin/space/'}, {'app_label': 'contenttypes', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C98F28>, 'models': [{'object_name': 'ContentType', 'admin_url': '/admin/contenttypes/contenttype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A198>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contenttypes/contenttype/add/'}], 'app_url': '/admin/contenttypes/'}], 'app_list': [{'app_label': 'auth', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C987B8>, 'models': [{'object_name': 'Group', 'admin_url': '/admin/auth/group/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000047044A8>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/auth/group/add/'}, {'object_name': 'Permission', 'admin_url': '/admin/auth/permission/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704DA0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/auth/permission/add/'}], 'app_url': '/admin/auth/'}, {'app_label': 'cobranza', 'has_module_perms': True, 'name': 'Cobranza', 'models': [{'object_name': 'Concepto', 'admin_url': '/admin/cobranza/concepto/', 'name': 'Conceptos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/concepto/add/'}, {'object_name': 'Deuda', 'admin_url': '/admin/cobranza/deuda/', 'name': 'Deudas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/deuda/add/'}, {'object_name': 'Moneda', 'admin_url': '/admin/cobranza/moneda/', 'name': 'Monedas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/cobranza/moneda/add/'}], 'app_url': '/admin/cobranza/'}, {'app_label': 'contabilidad', 'has_module_perms': True, 'name': 'Contabilidad', 'models': [{'object_name': 'Egreso', 'admin_url': '/admin/contabilidad/egreso/', 'name': 'Egresos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contabilidad/egreso/add/'}, {'object_name': 'Ingreso', 'admin_url': '/admin/contabilidad/ingreso/', 'name': 'Ingresos', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contabilidad/ingreso/add/'}], 'app_url': '/admin/contabilidad/'}, {'app_label': 'inmueble', 'has_module_perms': True, 'name': 'Inmueble', 'models': [{'object_name': 'Lote', 'admin_url': '/admin/inmueble/lote/', 'name': 'Lotes', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/inmueble/lote/add/'}], 'app_url': '/admin/inmueble/'}, {'app_label': 'params', 'has_module_perms': True, 'name': 'Params', 'models': [{'object_name': 'Person', 'admin_url': '/admin/params/person/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451A518>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/params/person/add/'}], 'app_url': '/admin/params/'}, {'app_label': 'flatpages', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003CAB198>, 'models': [{'object_name': 'FlatPage', 'admin_url': '/admin/flatpages/flatpage/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000452BC88>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/flatpages/flatpage/add/'}], 'app_url': '/admin/flatpages/'}, {'app_label': 'sad', 'has_module_perms': True, 'name': 'Sad', 'models': [{'object_name': 'Access', 'admin_url': '/admin/sad/access/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046ECE48>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/access/add/'}, {'object_name': 'Backup', 'admin_url': '/admin/sad/backup/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704358>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/backup/add/'}, {'object_name': 'Menu', 'admin_url': '/admin/sad/menu/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704A90>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/menu/add/'}, {'object_name': 'Module', 'admin_url': '/admin/sad/module/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000033C6780>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/module/add/'}, {'object_name': 'Ticket', 'admin_url': '/admin/sad/ticket/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704D30>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/ticket/add/'}, {'object_name': 'UserAssociation', 'admin_url': '/admin/sad/userassociation/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000046EC128>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userassociation/add/'}, {'object_name': 'UserEnterprise', 'admin_url': '/admin/sad/userenterprise/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000047046A0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userenterprise/add/'}, {'object_name': 'UserHeadquar', 'admin_url': '/admin/sad/userheadquar/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000452BDD8>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/userheadquar/add/'}, {'object_name': 'User', 'admin_url': '/admin/sad/user/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x000000000451AC88>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sad/user/add/'}], 'app_url': '/admin/sad/'}, {'app_label': 'sites', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003CA2E10>, 'models': [{'object_name': 'Site', 'admin_url': '/admin/sites/site/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704898>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/sites/site/add/'}], 'app_url': '/admin/sites/'}, {'app_label': 'space', 'has_module_perms': True, 'name': 'Space', 'models': [{'object_name': 'Association', 'admin_url': '/admin/space/association/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004704FD0>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/association/add/'}, {'object_name': 'Cuenta', 'admin_url': '/admin/space/cuenta/', 'name': 'Cuentas', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/cuenta/add/'}, {'object_name': 'Enterprise', 'admin_url': '/admin/space/enterprise/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004996400>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/enterprise/add/'}, {'object_name': 'EntidadBancaria', 'admin_url': '/admin/space/entidadbancaria/', 'name': 'EntidadBancarias', 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/entidadbancaria/add/'}, {'object_name': 'Headquar', 'admin_url': '/admin/space/headquar/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004996390>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/headquar/add/'}, {'object_name': 'Solution', 'admin_url': '/admin/space/solution/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000004530080>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/space/solution/add/'}], 'app_url': '/admin/space/'}, {'app_label': 'contenttypes', 'has_module_perms': True, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C98F28>, 'models': [{'object_name': 'ContentType', 'admin_url': '/admin/contenttypes/contenttype/', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x00000000044B9E80>, 'perms': {'add': True, 'delete': True, 'change': True}, 'add_url': '/admin/contenttypes/contenttype/add/'}], 'app_url': '/admin/contenttypes/'}], 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C8FB00>, 'has_permission': True, 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0000000003C8FBA8>}]"
+[2016-06-24 08:25:40] DEBUG [django.db.backends:89] (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "auth_user"."last_headquar_id", "auth_user"."last_module_id", "auth_user"."person_id", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
