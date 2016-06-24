@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'apps.cobranza',
     'apps.contabilidad',
     'apps.inmueble',
+    'apps.asistencia',
 ]
 
 MIDDLEWARE_CLASSES = [
